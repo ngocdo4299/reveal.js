@@ -8,10 +8,10 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +25,185 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- open slide and group members -->
+				<section >
+					<section>
+						<h3>Interactive Map with Vietnamese population data</h3>
+						<h4>Group 11</h4>
+						<p style="font-size: 25px;">Under the guidance of: Dr.NGUYEN Duc Dung</p>
+					</section>
+					
+					
+					<section data-transition="convex">
+						<h4>Group Members</h4>
+						<ul>
+							<li>Do Thi Minh Ngoc</li>
+							<li>Nguyen Dang Duong</li>
+							<li>Dang Minh Duc</li>
+							<li>Truong Quoc Khanh</li>
+							<!-- <li>
+								<a href="https://github.com/hakimel/reveal.js/#slide-transitions">git</a>
+							</li> -->
+						</ul>
+					</section>
+					
+				</section>
+				<!-- intro slide -->
+				<section>
+				
+					<section>
+						<h2>Motivation</h2>
+					</section>
+					<section>
+						<h3>Problems?</h3>
+						<p>Vietnam's administrative data</p>
+						<ul>
+							<li>
+								is statistic
+							</li>
+							<li>
+								is stored using numbered tables
+							</li>
+							<li>
+								representative figures are rigid, not intuitive
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Is there any application before?</h3>
+						
+					</section>
+					
+				</section>
+				<section>
+					<section data-background-iframe="http://worldpopulationreview.com/countries/vietnam-population/" data-background-interactive >
+
+						<p class="fragment fade-in-then-out" style="font-size: 100px; position: relative; float: top; font-weight: 600; color: red;">
+							HOWEVER...
+						</p>
+						<p class="fragment fade-in-then-semi-out" style="font-size: 70px; font-weight: 600; color: blueviolet;">The worldpopulationreview.com...</p>
+						<p class="fragment fade-in-then-semi-out" style="font-size: 50px; font-weight: 600; color: blueviolet;">is not so much interactive</p>
+						<p class="fragment fade-in-then-semi-out" style="font-size: 50px; font-weight: 600; color: blueviolet;">data is not detail enough</p>
+					</section>
+					
+				
+				</section>
+				
+
+				<section>
+					<h2>Interactive Map with Vietnamese data population</h2>
+				</section>
+				<!--conponent slide  -->
+				<section>
+					<section>
+						<h2>Component of the website</h2>
+					</section>
+					<!-- home page  -->
+					<section data-transition="concave" data-background-image="./screenshot/localhost_3000_catalog.png" data-background-size="contain" data-background-repeat="no-repeat" style="width: 100%;">
+						<div style="position: relative; float: left;margin: 0;">
+							<h2>Home Page</h2>
+							<p class="fragment fade-in-then-semi-out">
+								Presents overall objective of the web
+							</p>
+							<p class="fragment fade-in-then-semi-out">
+								Shows tutorials for users
+							</p>
+						</div>
+						
+					</section>
+
+
+				<!-- map page slide -->
+				</section>
+				<section data-transition="concave" data-background-image="./screenshot/home.png">
+					<div style="position: relative; float: right;">
+						<h2>Map Page</h2>
+						<p>
+							where our main project is
+						</p>
+					</div>
+				
+				</section>
+				<section>
+					<h4>This is how we apply the map to the web:</h4>
+					<pre>
+						<code class="hljs" style="padding: 0 2%;">
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+						</code>
+					</pre>
+					<p style="font-size: 30px;">Code syntax for embedding  
+						<a href="https://developers.google.com/maps/documentation/javascript/tutorial">Google Map API</a>
+					</p>
+				</section>
+				<!--Detail Map page slide -->
+				<section>
+					<section>
+						<h3>
+							What are the features?
+						</h3>
+					</section>
+
+					<section data-background-video="./screenshot/interact.mp4" data-background-video-loop="true" data-background-video-muted="true">
+						<div style="position: relative; float: right; font-weight: 600; width: 50%;">
+							<p>Can interact with</p>
+						</div>
+						
+					</section>
+
+					<section data-background-video="./screenshot/layers.mp4" data-background-video-loop="true" data-background-video-muted="true">
+						<div style="position: relative; float: left; font-weight: 600; width: 30%;">
+							<p>3 layers: Province, District, Ward</p>
+						</div>
+					</section>
+
+					<section data-background-video="./screenshot/controls.mp4" data-background-video-loop="true" data-background-video-muted="true">
+						<div style="position: relative; float: right; font-weight: 600; width: 30%">
+							<p>Some control buttons: Zoom, Map type, Options, ...</p>
+						</div>
+					</section>
+
+					<section data-background-video="./screenshot/search.mp4" data-background-video-loop="true" data-background-video-muted="true">
+						<div style="position: relative; float: left; font-weight: 600; width: 30%;">
+							<p>Side menu for Searching and Displaying results</p>
+						</div>
+						
+					</section>
+					
+
+
+				</section>
+
+				<!-- about page slide -->
+				<section data-transition="concave" data-background-image="">
+					<h2>About Page</h2>
+					<p>Detail info about project</p>
+					<p>Detail info about team members</p>
+					<p>References and Documents</p>
+				</section>
+
+				<!-- demo slide -->
+				<section>
+					<h2>DEMO TIME!!!</h2>
+				</section>
+
+				<!-- conclusion slide -->
+				<section>
+					<section>
+						<h3>In conclusion:</h3>
+					</section>
+					<section>
+						<p>Done:</p>
+						<div>
+							<p>Visualize data on map</p>
+						</div>
+					</section>
+					<section>
+						<p>Not Done:</p>
+						<div>Nuthin???</div>
+					</section>
+					
+				</section>
+			
 			</div>
 		</div>
 
@@ -37,14 +214,22 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				hash: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					
+				],
+				slideNumber: 'c/t',
+				progress: true,
+				navigationMode: 'linear',
+				hash: true
+			
 			});
+
+		
+
 		</script>
 	</body>
 </html>
